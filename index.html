@@ -2,77 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <title>Electronics Store Website Template Demo</title>
+    <title>Grayscale</title>
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header class="header">
       <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></div>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.header-hero.partial.html"
+        data-hx-get="index.header.partial.html"
       ></div>
     </header>
+    <body>
+
     <main>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.bestsellers.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.promo-offers.partial.html"
-      ></section>
+      <section class="about__container">
       <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.promotion-cards.partial.html"
+        data-hx-get="index.about.partial.html"
       ></div>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.deals.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.join-us-now.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.positive-aspects.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.hot-deals.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.testimonials.partial.html"
-      ></section>
+      <section class="Projects__container">
+        <div
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.projects.partial.html"
+        ></div>
+        <section class="signup__section">
+          <div
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.signup-section.partial.html"
+          ></div>
+    </header>
     </main>
-    <footer
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="global.footer.partial.html"
-    ></footer>
-    <script src="./js/index.js"></script>
+
+    <footer>
+
+    </footer>
+
   </body>
 </html>
